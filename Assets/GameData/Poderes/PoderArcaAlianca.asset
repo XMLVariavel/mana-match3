@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddabcce3e8a161247bb6904948331923, type: 3}
+  m_Name: PoderArcaAlianca
+  m_EditorClassIdentifier: BibleMatch3::BibleMatch3.PowerUpConfig
+  NomeExibicao: "Arca da Alian\xE7a"
+  Icone: {fileID: 21300000, guid: 951f6dce2023165489e7ff73936ef532, type: 3}
+  Descricao: "Remove do tabuleiro todas as pe\xE7as do tipo escolhido."
+  Tipo: 0
+  TipoEspecialAssociado: 4
+  EfeitoDeTabuleiro: {fileID: 11400000, guid: 2fd426a2139780e48bf5d71aa8e51977, type: 2}
+  NivelAtual: 1
+  NivelMaximo: 3
+  CustoEvolucaoPorNivel: 9600000090010000
+  EfeitoAvulso: {fileID: 0}
+  CustoMoedas: 0
+  QuantidadePorCompra: 3
+  EstoqueInicial: 3

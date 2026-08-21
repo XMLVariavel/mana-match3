@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "542694547681",
+    "project_id": "biblematchmana",
+    "storage_bucket": "biblematchmana.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542694547681:android:a3dfbfd2ba6f41489217a0",
+        "android_client_info": {
+          "package_name": "com.palaviva.biblematchmana"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeYv5yW0pIuGZjWVlXHlNveZNE6en48NQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

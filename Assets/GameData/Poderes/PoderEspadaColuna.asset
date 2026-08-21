@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddabcce3e8a161247bb6904948331923, type: 3}
+  m_Name: PoderEspadaColuna
+  m_EditorClassIdentifier: BibleMatch3::BibleMatch3.PowerUpConfig
+  NomeExibicao: Espada da Palavra (Coluna)
+  Icone: {fileID: 21300000, guid: 93c16d38398a8964c99fa4afc2da3a1f, type: 3}
+  Descricao: "Corta a coluna inteira. Nasce de uma combina\xE7\xE3o de 4 na vertical."
+  Tipo: 0
+  TipoEspecialAssociado: 2
+  EfeitoDeTabuleiro: {fileID: 11400000, guid: cc6ad6782a8dd7d46b0066ffe4c7764a, type: 2}
+  NivelAtual: 1
+  NivelMaximo: 3
+  CustoEvolucaoPorNivel: 9600000090010000
+  EfeitoAvulso: {fileID: 0}
+  CustoMoedas: 0
+  QuantidadePorCompra: 3
+  EstoqueInicial: 3

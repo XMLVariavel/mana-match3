@@ -1,0 +1,25 @@
+{
+  "atlas": "PowerUpsAtlas.png",
+  "cellSize": 512,
+  "padding": 16,
+  "sprites": {
+    "power_hammer": {
+      "x": 32,
+      "y": 32,
+      "width": 480,
+      "height": 480
+    },
+    "power_shuffle": {
+      "x": 544,
+      "y": 32,
+      "width": 480,
+      "height": 480
+    },
+    "power_plus5": {
+      "x": 1056,
+      "y": 32,
+      "width": 480,
+      "height": 480
+    }
+  }
+}

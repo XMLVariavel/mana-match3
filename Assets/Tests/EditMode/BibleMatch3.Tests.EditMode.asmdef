@@ -1,0 +1,22 @@
+{
+    "name": "BibleMatch3.Tests.EditMode",
+    "rootNamespace": "BibleMatch3.Tests",
+    "references": [
+        "BibleMatch3"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbea70d12186a474ba373e8c1fa4de3d, type: 3}
+  m_Name: Fase03
+  m_EditorClassIdentifier: BibleMatch3::BibleMatch3.LevelData
+  Numero: 3
+  Nome: A Videira Verdadeira
+  Movimentos: 20
+  Objetivos:
+  - Type: 2
+    RequiredAmount: 24
+    CurrentAmount: 0
+  EstrelaScore1: 1400
+  EstrelaScore2: 3000
+  EstrelaScore3: 4600
+  Obstaculos:
+  - Tipo: 1
+    X: 0
+    Y: 4
+  - Tipo: 1
+    X: 7
+    Y: 4

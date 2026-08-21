@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbea70d12186a474ba373e8c1fa4de3d, type: 3}
+  m_Name: Fase04
+  m_EditorClassIdentifier: BibleMatch3::BibleMatch3.LevelData
+  Numero: 4
+  Nome: A Ceifa Abundante
+  Movimentos: 20
+  Objetivos:
+  - Type: 3
+    RequiredAmount: 22
+    CurrentAmount: 0
+  - Type: 4
+    RequiredAmount: 14
+    CurrentAmount: 0
+  EstrelaScore1: 1600
+  EstrelaScore2: 3200
+  EstrelaScore3: 5000
+  Obstaculos:
+  - Tipo: 2
+    X: 2
+    Y: 2
+  - Tipo: 2
+    X: 5
+    Y: 5

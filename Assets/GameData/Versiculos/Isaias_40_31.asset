@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0250443ef62452f4f8d4c34048cd6303, type: 3}
+  m_Name: Isaias_40_31
+  m_EditorClassIdentifier: BibleMatch3::BibleMatch3.VerseData
+  Texto: "Os que esperam no Senhor renovar\xE3o as suas for\xE7as."
+  Referencia: "Isa\xEDas 40:31"
+  Reflexao: "Esperar aqui n\xE3o \xE9 ficar parado \u2014 \xE9 renovar-se enquanto
+    caminha."

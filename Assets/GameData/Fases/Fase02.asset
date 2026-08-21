@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbea70d12186a474ba373e8c1fa4de3d, type: 3}
+  m_Name: Fase02
+  m_EditorClassIdentifier: BibleMatch3::BibleMatch3.LevelData
+  Numero: 2
+  Nome: "Os Peixes e os P\xE3es"
+  Movimentos: 22
+  Objetivos:
+  - Type: 0
+    RequiredAmount: 18
+    CurrentAmount: 0
+  - Type: 1
+    RequiredAmount: 18
+    CurrentAmount: 0
+  EstrelaScore1: 1200
+  EstrelaScore2: 2600
+  EstrelaScore3: 4000
+  Obstaculos:
+  - Tipo: 3
+    X: 3
+    Y: 3
+  - Tipo: 3
+    X: 4
+    Y: 4

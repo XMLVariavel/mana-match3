@@ -1,0 +1,43 @@
+{
+  "atlas": "PecasAtlas.png",
+  "cellSize": 512,
+  "padding": 16,
+  "sprites": {
+    "peca_pao": {
+      "x": 32,
+      "y": 32,
+      "width": 480,
+      "height": 480
+    },
+    "peca_peixe": {
+      "x": 544,
+      "y": 32,
+      "width": 480,
+      "height": 480
+    },
+    "peca_uva": {
+      "x": 1056,
+      "y": 32,
+      "width": 480,
+      "height": 480
+    },
+    "peca_espiga": {
+      "x": 32,
+      "y": 544,
+      "width": 480,
+      "height": 480
+    },
+    "peca_azeite": {
+      "x": 544,
+      "y": 544,
+      "width": 480,
+      "height": 480
+    },
+    "peca_pomba": {
+      "x": 1056,
+      "y": 544,
+      "width": 480,
+      "height": 480
+    }
+  }
+}

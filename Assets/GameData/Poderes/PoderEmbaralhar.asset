@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddabcce3e8a161247bb6904948331923, type: 3}
+  m_Name: PoderEmbaralhar
+  m_EditorClassIdentifier: BibleMatch3::BibleMatch3.PowerUpConfig
+  NomeExibicao: Embaralhar
+  Icone: {fileID: 0}
+  Descricao: "Reorganiza todas as pe\xE7as do tabuleiro."
+  Tipo: 1
+  TipoEspecialAssociado: 0
+  EfeitoDeTabuleiro: {fileID: 0}
+  NivelAtual: 1
+  NivelMaximo: 3
+  CustoEvolucaoPorNivel: 
+  EfeitoAvulso: {fileID: 11400000, guid: 26aad48c7e17f21499f12f8326e1e11e, type: 2}
+  CustoMoedas: 75
+  QuantidadePorCompra: 3
+  EstoqueInicial: 3

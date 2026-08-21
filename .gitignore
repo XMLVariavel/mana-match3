@@ -1,0 +1,43 @@
+# Pastas geradas automaticamente pela Unity — nunca comitar
+/Library/
+/Temp/
+/Obj/
+/Build/
+/Builds/
+/Logs/
+/UserSettings/
+/MemoryCaptures/
+/Recordings/
+
+# Gerado pelo Rider/VS/VS Code para cada máquina
+.vs/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Pacotes (o Packages/manifest.json e packages-lock.json DEVEM ser versionados;
+# o cache local de pacotes, não)
+/[Pp]ackages/*
+!/[Pp]ackages/manifest.json
+!/[Pp]ackages/packages-lock.json
+
+# Arquivos de configuração sensíveis — NUNCA comitar
+/Assets/google-services.json
+/Assets/GoogleService-Info.plist
+
+# OS
+.DS_Store
+Thumbs.db
+
+Assets/Firebase/Plugins/x86_64/

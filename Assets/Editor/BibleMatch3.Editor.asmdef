@@ -1,0 +1,20 @@
+{
+    "name": "BibleMatch3.Editor",
+    "rootNamespace": "BibleMatch3.EditorTools",
+    "references": [
+        "BibleMatch3",
+        "UnityEngine.UI",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

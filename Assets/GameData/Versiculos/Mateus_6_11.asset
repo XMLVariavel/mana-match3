@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0250443ef62452f4f8d4c34048cd6303, type: 3}
+  m_Name: Mateus_6_11
+  m_EditorClassIdentifier: BibleMatch3::BibleMatch3.VerseData
+  Texto: "O p\xE3o nosso de cada dia nos d\xE1 hoje."
+  Referencia: Mateus 6:11
+  Reflexao: "O man\xE1 era di\xE1rio. Sustento se recebe hoje, n\xE3o se estoca."

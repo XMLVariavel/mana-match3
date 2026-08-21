@@ -1,0 +1,8 @@
+﻿<Solution>
+  <Project Path="BibleMatch3.csproj" />
+  <Project Path="BibleMatch3.Tests.EditMode.csproj" />
+  <Project Path="GoogleMobileAds.Editor.csproj" />
+  <Project Path="BibleMatch3.Editor.csproj" />
+  <Project Path="BibleMatch3.Tests.PlayMode.csproj" />
+  <Project Path="Firebase.App.Internal.csproj" />
+</Solution>
