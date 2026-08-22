@@ -45,16 +45,10 @@ namespace BibleMatch3
             yield return new WaitForSecondsRealtime(duracaoDaAbertura);
             aberturaConcluida = true;
 
-            if (privacyManager != null && privacyManager.ConsentimentoJaRegistrado)
-            {
-                // Jogador recorrente: a decisão já foi tomada antes, não perguntamos de novo.
-                if (loginPronto) navigator?.Mostrar(telaSeguinte);
-                else navigator?.Mostrar(telaCarregando);
-            }
-            else
-            {
-                navigator?.Mostrar(telaConsentimento);
-            }
+            // A tela de entrada reúne a escolha do jogador, o aceite legal
+            // e os dois caminhos de autenticação. Assim, o usuário vê
+            // Convidado/Gmail logo após a abertura, inclusive em aparelhos novos.
+            navigator?.Mostrar(telaSeguinte);
         }
 
         /// <summary>Chamado pelo botão "Aceitar" da tela de consentimento.</summary>
@@ -82,7 +76,8 @@ namespace BibleMatch3
         private void HandleLoginPronto()
         {
             loginPronto = true;
-            if (aberturaConcluida) navigator?.Mostrar(telaSeguinte);
+            // O login pode concluir antes ou depois do vídeo; a Entrada só
+            // avança quando o jogador escolhe um caminho.
         }
     }
 }

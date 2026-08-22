@@ -38,6 +38,9 @@ namespace BibleMatch3.EditorTools
         public const string CaixaSelada = "obstaculo_caixa";
         public const string FundoJornada = "fundo_jornada";
         public const string FundoCelestial = "fundo_celestial";
+        public const string FundoTelaEntrada = "fundo_tela_entrada";
+        public const string PainelBemVindo = "painel_bem_vindo";
+        public const string LogoJogo = "logo_jogo";
         public const string MolduraTabuleiro = "moldura_tabuleiro";
         public static readonly string[] NomesDeAvatares = { "avatar_davi", "avatar_ester", "avatar_daniel", "avatar_rute", "avatar_moises" };
         public static readonly string[] NomesDeOrnamentos =
@@ -101,15 +104,16 @@ namespace BibleMatch3.EditorTools
                 var importador = AssetImporter.GetAtPath(caminho) as TextureImporter;
                 if (importador == null) continue;
 
-                bool eFundo = nome == FundoJornada || nome == FundoCelestial;
+                bool eFundo = nome == FundoJornada || nome == FundoCelestial || nome == FundoTelaEntrada;
+                bool eEntrada = nome == FundoTelaEntrada || nome == PainelBemVindo || nome == LogoJogo;
                 bool eMoldura = nome == MolduraTabuleiro;
                 bool eAvatar = Array.IndexOf(NomesDeAvatares, nome) >= 0;
                 bool eOrnamento = Array.IndexOf(NomesDeOrnamentos, nome) >= 0;
                 bool eIconeDeModo = Array.IndexOf(NomesDeIconesDeModo, nome) >= 0;
                 bool eIconeDePoder = Array.IndexOf(NomesDeIconesDePoder, nome) >= 0;
                 bool eKit = Array.IndexOf(NomesDoKit, nome) >= 0;
-                float pixelsPorUnidade = eFundo || eMoldura || eOrnamento || eKit ? 100f : eAvatar || eIconeDeModo || eIconeDePoder ? 512f : PixelsPorUnidade;
-                int tamanhoMaximo = eFundo || eMoldura || eAvatar || eOrnamento || eIconeDeModo || eIconeDePoder || eKit ? 2048 : 256;
+                float pixelsPorUnidade = eFundo || eMoldura || eOrnamento || eKit || eEntrada ? 100f : eAvatar || eIconeDeModo || eIconeDePoder ? 512f : PixelsPorUnidade;
+                int tamanhoMaximo = eFundo || eMoldura || eAvatar || eOrnamento || eIconeDeModo || eIconeDePoder || eKit || eEntrada ? 2048 : 256;
 
                 Vector4 borda = eOrnamento ? BordaDeOrnamento(nome)
                     : eKit && BordasDoKit.TryGetValue(nome, out Vector4 bordaKit) ? bordaKit
@@ -197,6 +201,9 @@ namespace BibleMatch3.EditorTools
             foreach (string icone in NomesDeIconesDeModo) yield return icone;
             foreach (string icone in NomesDeIconesDePoder) yield return icone;
             foreach (string peca in NomesDoKit) yield return peca;
+            yield return FundoTelaEntrada;
+            yield return PainelBemVindo;
+            yield return LogoJogo;
         }
 
         /// <summary>

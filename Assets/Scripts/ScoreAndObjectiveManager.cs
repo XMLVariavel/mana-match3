@@ -238,11 +238,17 @@ namespace BibleMatch3
             OnWin?.Invoke(stars);
         }
 
+        /// <summary>
+        /// Chamado só pelo modo Contra o Relógio quando o tempo acaba — esse é
+        /// o desfecho NORMAL desse modo (bater o recorde antes do tempo passar),
+        /// não uma derrota. Por isso dispara OnWin (0 estrelas, já que esse modo
+        /// não usa scoreForStarX), preservando o CurrentScore para exibição.
+        /// </summary>
         public void EncerrarPorTempo()
         {
             if (LevelEnded) return;
             LevelEnded = true;
-            OnLose?.Invoke();
+            OnWin?.Invoke(0);
         }
 
         private void CheckLoseCondition()

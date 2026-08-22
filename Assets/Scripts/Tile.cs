@@ -111,7 +111,9 @@ namespace BibleMatch3
             if (colisor != null)
             {
                 float escalaSegura = Mathf.Max(escala, 0.0001f);
-                colisor.size = Vector2.one / escalaSegura;
+                // Compensa pelo cellSize real (não um valor fixo de 1) — sem isso,
+                // a área de toque descola do visual sempre que cellSize != 1.
+                colisor.size = Vector2.one * cellSize / escalaSegura;
             }
         }
 

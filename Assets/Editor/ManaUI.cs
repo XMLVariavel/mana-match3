@@ -491,6 +491,35 @@ namespace BibleMatch3.EditorTools
             return botao;
         }
 
+        public static Button BotaoLink(string nome, Transform pai, string rotulo, float tamanhoFonte = 16f)
+        {
+            var go = new GameObject(nome, typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(Button));
+            go.transform.SetParent(pai, false);
+            var imagem = go.GetComponent<Image>();
+            imagem.color = Transparente;
+            imagem.raycastTarget = true;
+
+            var botao = go.GetComponent<Button>();
+            botao.targetGraphic = imagem;
+            var cores = botao.colors;
+            cores.normalColor = Color.white;
+            cores.highlightedColor = new Color(1f, 0.88f, 0.42f, 1f);
+            cores.pressedColor = new Color(0.82f, 0.65f, 0.20f, 1f);
+            cores.fadeDuration = 0.08f;
+            botao.colors = cores;
+
+            var texto = Texto("Texto", go.transform, rotulo, tamanhoFonte,
+                TextAlignmentOptions.Center, Dourado, FontStyles.Underline);
+            texto.enableAutoSizing = true;
+            texto.fontSizeMin = 11f;
+            texto.fontSizeMax = tamanhoFonte;
+            texto.rectTransform.anchorMin = Vector2.zero;
+            texto.rectTransform.anchorMax = Vector2.one;
+            texto.rectTransform.offsetMin = Vector2.zero;
+            texto.rectTransform.offsetMax = Vector2.zero;
+            return botao;
+        }
+
         private static string IconeDoBotao(string nome)
         {
             if (nome.IndexOf("Inicio", StringComparison.OrdinalIgnoreCase) >= 0) return "home";

@@ -535,7 +535,6 @@ namespace BibleMatch3.EditorTools
             MontarSplashEConsentimento(ctx);
             MontarMapaDeFases(ctx);
             MontarInicio(ctx);
-            MontarDesafios(ctx);
             MontarTelaDeJogo(ctx);
             MontarLoja(ctx);
             MontarPerfil(ctx);
@@ -653,8 +652,8 @@ namespace BibleMatch3.EditorTools
             Button campanha = ManaUI.CardModo("CardCampanha", conteudo, "campaign", "CAMPANHA", "Avance pelos episódios e desbloqueie novos capítulos.", ManaUI.Dourado);
             Button estudo = ManaUI.CardModo("CardEstudoInfinito", conteudo, "infinite", "ESTUDO INFINITO", "Faça combos, conquiste XP e descubra novos versículos.", ManaUI.BotaoPrimario);
             Button diario = ManaUI.CardModo("CardDesafioDiario", conteudo, "daily", "DESAFIO DIÁRIO", "Uma missão bíblica renovada a cada dia.", ManaUI.Dourado);
-            Button relogio = ManaUI.CardModo("CardContraRelogio", conteudo, "time", "CONTRA O RELÓGIO", "Pontue o máximo antes que a areia termine.", ManaUI.BotaoPrimario);
-            Button guardiao = ManaUI.CardModo("CardGuardiao", conteudo, "guardian", "GUARDIÃO DA PALAVRA", "Proteja a sequência e responda ao desafio da Palavra.", ManaUI.Dourado);
+            // Contra o Relógio e Guardião da Palavra: código mantido em GameManager/
+            // ModeChallengeDefinition, cards retirados da navegação por decisão de escopo.
 
             RectTransform rodape = ManaUI.Vazio("Rodape", tela);
             ManaUI.FaixaInferior(rodape, 0f, 150f);
@@ -669,7 +668,6 @@ namespace BibleMatch3.EditorTools
 
             Button inicio = ManaUI.Botao("BotaoInicio", linhaMenu, "Início", ManaUI.BotaoSecundario, 16f);
             Button jornada = ManaUI.Botao("BotaoJornada", linhaMenu, "Jornada", ManaUI.BotaoPrimario, 16f);
-            Button desafios = ManaUI.Botao("BotaoDesafios", linhaMenu, "Desafios", ManaUI.BotaoSecundario, 16f);
             Button loja = ManaUI.Botao("BotaoLoja", linhaMenu, "Loja", ManaUI.BotaoSecundario, 15f);
             Button perfil = ManaUI.Botao("BotaoPerfil", linhaMenu, "Perfil", ManaUI.BotaoSecundario, 15f);
             Button opcoes = ManaUI.Botao("BotaoOpcoes", linhaMenu, "Opções", ManaUI.BotaoSecundario, 15f);
@@ -677,11 +675,8 @@ namespace BibleMatch3.EditorTools
             Eventos.AoClicar(campanha, controller.EntrarNaPrimeiraFase);
             Eventos.AoClicar(estudo, controller.EntrarNoEstudoInfinito);
             Eventos.AoClicar(diario, controller.EntrarNoDesafioDiario);
-            Eventos.AoClicar(relogio, controller.EntrarNoContraRelogio);
-            Eventos.AoClicar(guardiao, controller.EntrarNoGuardiaoDaPalavra);
             Eventos.AoClicar(inicio, controller.AbrirInicio);
             Eventos.AoClicar(jornada, controller.AbrirJornada);
-            Eventos.AoClicar(desafios, controller.AbrirDesafios);
             Eventos.AoClicar(loja, controller.AbrirLoja);
             Eventos.AoClicar(perfil, controller.AbrirPerfil);
             Eventos.AoClicar(opcoes, controller.AbrirConfiguracoes);
@@ -696,7 +691,6 @@ namespace BibleMatch3.EditorTools
                  .Ref("containerDaTrilha", conteudo)
                  .Ref("botaoFasePrefab", ctx.Prefabs.BotaoFase)
                  .Texto("telaInicio", TelaInicio)
-                 .Texto("telaDesafios", TelaDesafios)
                  .Texto("telaJogo", TelaJogo)
                  .Texto("telaLoja", TelaLoja)
                  .Texto("telaPerfil", TelaPerfil)
@@ -732,38 +726,11 @@ namespace BibleMatch3.EditorTools
 
             Button jornada = ManaUI.Botao("BotaoJornada", corpo, "MODOS DE JOGO", ManaUI.BotaoPrimario, 24f);
             ManaUI.Altura(jornada.gameObject, 76f);
-            Button desafios = ManaUI.Botao("BotaoDesafios", corpo, "DESAFIOS", ManaUI.BotaoSecundario, 24f);
-            ManaUI.Altura(desafios.gameObject, 76f);
             Button opcoes = ManaUI.Botao("BotaoOpcoes", corpo, "OPÇÕES", ManaUI.BotaoSecundario, 24f);
             ManaUI.Altura(opcoes.gameObject, 76f);
 
             Eventos.AoClicar(jornada, ctx.Mapa.AbrirJornada);
-            Eventos.AoClicar(desafios, ctx.Mapa.AbrirDesafios);
             Eventos.AoClicar(opcoes, ctx.Mapa.AbrirConfiguracoes);
-
-            MontarNavegacao(ctx, tela, ctx.Mapa);
-        }
-
-        private static void MontarDesafios(Contexto ctx)
-        {
-            RectTransform tela = NovaTela(ctx, TelaDesafios);
-            RectTransform cabecalho = Cabecalho(tela, "DESAFIOS");
-            RecursosNoCabecalho(ctx, tela, cabecalho);
-
-            RectTransform area = ManaUI.Vazio("ListaDesafios", tela);
-            area.anchorMin = new Vector2(0.06f, 0f);
-            area.anchorMax = new Vector2(0.94f, 1f);
-            area.offsetMin = new Vector2(0f, 170f);
-            area.offsetMax = new Vector2(0f, -150f);
-            ManaUI.Rolagem("Rolagem", area, out RectTransform conteudo, grade: false);
-
-            Button diario = ManaUI.CardModo("CardDesafioDiario", conteudo, "daily", "DESAFIO DIÁRIO", "Uma missão bíblica renovada a cada dia.", ManaUI.Dourado);
-            Button relogio = ManaUI.CardModo("CardContraRelogio", conteudo, "time", "CONTRA O RELÓGIO", "Pontue o máximo antes que o tempo termine.", ManaUI.BotaoPrimario);
-            Button guardiao = ManaUI.CardModo("CardGuardiao", conteudo, "guardian", "GUARDIÃO DA PALAVRA", "Proteja objetivos e complete a missão da Palavra.", ManaUI.Dourado);
-
-            Eventos.AoClicar(diario, ctx.Mapa.EntrarNoDesafioDiario);
-            Eventos.AoClicar(relogio, ctx.Mapa.EntrarNoContraRelogio);
-            Eventos.AoClicar(guardiao, ctx.Mapa.EntrarNoGuardiaoDaPalavra);
 
             MontarNavegacao(ctx, tela, ctx.Mapa);
         }
@@ -782,13 +749,11 @@ namespace BibleMatch3.EditorTools
 
             Button inicio = ManaUI.Botao("BotaoInicio", linha, "Início", ManaUI.BotaoSecundario, 16f);
             Button jornada = ManaUI.Botao("BotaoJornada", linha, "Jornada", ManaUI.BotaoPrimario, 16f);
-            Button desafios = ManaUI.Botao("BotaoDesafios", linha, "Desafios", ManaUI.BotaoSecundario, 16f);
             Button loja = ManaUI.Botao("BotaoLoja", linha, "Loja", ManaUI.BotaoSecundario, 15f);
             Button perfil = ManaUI.Botao("BotaoPerfil", linha, "Perfil", ManaUI.BotaoSecundario, 15f);
             Button opcoes = ManaUI.Botao("BotaoOpcoes", linha, "Opções", ManaUI.BotaoSecundario, 15f);
             Eventos.AoClicar(inicio, controller.AbrirInicio);
             Eventos.AoClicar(jornada, controller.AbrirJornada);
-            Eventos.AoClicar(desafios, controller.AbrirDesafios);
             Eventos.AoClicar(loja, controller.AbrirLoja);
             Eventos.AoClicar(perfil, controller.AbrirPerfil);
             Eventos.AoClicar(opcoes, controller.AbrirConfiguracoes);

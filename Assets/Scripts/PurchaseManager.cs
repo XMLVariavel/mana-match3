@@ -25,6 +25,21 @@ namespace BibleMatch3
         public event Action OnCompraConcluida;
         public event Action<string> OnErro;
 
+        private void OnEnable()
+        {
+            if (firebaseManager != null) firebaseManager.OnProgressoCarregado += HandleProgressoCarregado;
+        }
+
+        private void OnDisable()
+        {
+            if (firebaseManager != null) firebaseManager.OnProgressoCarregado -= HandleProgressoCarregado;
+        }
+
+        private void HandleProgressoCarregado(PlayerProgress progresso)
+        {
+            if (progresso != null) AplicarEstadoSalvo(progresso.SemAnuncios);
+        }
+
         private void Start()
         {
             InicializarCompras();

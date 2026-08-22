@@ -273,8 +273,18 @@ namespace BibleMatch3
 
             db.Collection(ColecaoUsuarios).Document(uid).DeleteAsync().ContinueWithOnMainThread(taskUsuario =>
             {
-                db.Collection(ColecaoLeaderboard).Document(uid).DeleteAsync().ContinueWithOnMainThread(taskLeaderboard =>
+                // O leaderboard agora pode ter vários documentos por jogador
+                // (um por modo/temporada/desafio) — precisa consultar todos
+                // antes de apagar, não dá mais para assumir um único documento
+                // fixo em leaderboard/{uid}.
+                db.Collection(ColecaoLeaderboard).WhereEqualTo("uid", uid).GetSnapshotAsync().ContinueWithOnMainThread(consultaTask =>
                 {
+                    if (!consultaTask.IsCanceled && !consultaTask.IsFaulted)
+                    {
+                        foreach (DocumentSnapshot doc in consultaTask.Result.Documents)
+                            doc.Reference.DeleteAsync();
+                    }
+
                     auth.CurrentUser.DeleteAsync().ContinueWithOnMainThread(taskConta =>
                     {
                         bool sucesso = !taskConta.IsCanceled && !taskConta.IsFaulted;

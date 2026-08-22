@@ -14,11 +14,41 @@ namespace BibleMatch3
         [SerializeField] private int vidasMaximas = 5;
         [SerializeField] private int minutosPorVida = 20;
 
+        [Tooltip("Opcional — se preenchido, carrega o progresso salvo ao iniciar e persiste a cada mudança de vidas.")]
+        [SerializeField] private FirebaseManager firebaseManager;
+
         public int VidasAtuais { get; private set; }
         private DateTime referenciaRegeneracao; // início da contagem da vida atual em regeneração
 
         public event Action<int> OnVidasChanged;
         public event Action OnSemVidas;
+
+        private void OnEnable()
+        {
+            if (firebaseManager != null) firebaseManager.OnProgressoCarregado += HandleProgressoCarregado;
+        }
+
+        private void OnDisable()
+        {
+            if (firebaseManager != null) firebaseManager.OnProgressoCarregado -= HandleProgressoCarregado;
+        }
+
+        private void HandleProgressoCarregado(PlayerProgress progresso)
+        {
+            if (progresso == null) return;
+            Inicializar(progresso.LivesCount, progresso.LastLifeTimestampUnix);
+        }
+
+        private void Persistir()
+        {
+            if (firebaseManager == null || !firebaseManager.UsuarioLogado) return;
+
+            firebaseManager.AtualizarProgresso(p =>
+            {
+                p.LivesCount = VidasAtuais;
+                p.LastLifeTimestampUnix = ReferenciaRegeneracaoUnix();
+            });
+        }
 
         /// <summary>
         /// Chamado ao carregar o PlayerProgress do Firestore/fila local —
@@ -29,6 +59,7 @@ namespace BibleMatch3
             VidasAtuais = Mathf.Clamp(vidasSalvas, 0, vidasMaximas);
             referenciaRegeneracao = DateTimeOffset.FromUnixTimeSeconds(referenciaRegeneracaoUnix).UtcDateTime;
             AplicarRegeneracaoPendente();
+            OnVidasChanged?.Invoke(VidasAtuais);
         }
 
         private void AplicarRegeneracaoPendente()
@@ -43,6 +74,7 @@ namespace BibleMatch3
             // Reancora no "resto" não aproveitado, para não perder progresso da próxima vida.
             referenciaRegeneracao = referenciaRegeneracao.AddMinutes(vidasGanhas * minutosPorVida);
             OnVidasChanged?.Invoke(VidasAtuais);
+            Persistir();
         }
 
         /// <summary>
@@ -74,6 +106,7 @@ namespace BibleMatch3
             if (estavaCheio) referenciaRegeneracao = DateTime.UtcNow;
 
             OnVidasChanged?.Invoke(VidasAtuais);
+            Persistir();
             return true;
         }
 
@@ -87,6 +120,7 @@ namespace BibleMatch3
             if (VidasAtuais >= vidasMaximas) return;
             VidasAtuais++;
             OnVidasChanged?.Invoke(VidasAtuais);
+            Persistir();
         }
 
         /// <summary>
