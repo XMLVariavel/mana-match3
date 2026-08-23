@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 67325601441081a458c446f3030659e6
+guid: 9a7553dade422a14f8bb65cac39bc2cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4482014880133419658
-    second: PAINEL BEM VIDO AO JOGO _0
+      213: -3420139586244584797
+    second: Moldura_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PAINEL BEM VIDO AO JOGO _0
+      name: Moldura_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 5
-        width: 362
-        height: 239
+        x: 0
+        y: 0
+        width: 572
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a821e5869c0533e30800000000000000
-      internalID: 4482014880133419658
+      spriteID: 3aad3afba293980d0800000000000000
+      internalID: -3420139586244584797
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PAINEL BEM VIDO AO JOGO _0: 4482014880133419658
+      Moldura_0: -3420139586244584797
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

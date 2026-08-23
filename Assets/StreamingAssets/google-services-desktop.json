@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "542694547681",
+    "firebase_url": "https://biblematchmana-default-rtdb.firebaseio.com",
     "project_id": "biblematchmana",
     "storage_bucket": "biblematchmana.firebasestorage.app"
   },

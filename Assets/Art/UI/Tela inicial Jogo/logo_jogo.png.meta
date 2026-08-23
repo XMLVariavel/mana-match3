@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 7437c8d4b8b827645ac651617536db56
+guid: c1d2b15e453de424ab097d19609c37b0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8682905661276287482
-    second: BEM VINDO AO JOGO_0
+      213: 4238467778708592708
+    second: logo_jogo_0
+  - first:
+      213: 1118885617078442471
+    second: logo_jogo_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BEM VINDO AO JOGO_0
+      name: logo_jogo_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 601
+        x: 4
+        y: 2
+        width: 283
+        height: 131
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af1f996e1b0ef7870800000000000000
-      internalID: 8682905661276287482
+      spriteID: 4485dd50dff02da30800000000000000
+      internalID: 4238467778708592708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo_jogo_1
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e911466a84178f00800000000000000
+      internalID: 1118885617078442471
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BEM VINDO AO JOGO_0: 8682905661276287482
+      logo_jogo_0: 4238467778708592708
+      logo_jogo_1: 1118885617078442471
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
