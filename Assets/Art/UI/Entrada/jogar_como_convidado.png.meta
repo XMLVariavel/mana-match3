@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9a7553dade422a14f8bb65cac39bc2cf
+guid: 24ff5a4c0c5fa2e4c9f72171fb51c938
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3420139586244584797
-    second: Moldura_0
+      213: 3413746987462067990
+    second: jogar_como_convidado_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Moldura_0
+      name: jogar_como_convidado_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 572
-        height: 1024
+        x: 31
+        y: 25
+        width: 966
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3aad3afba293980d0800000000000000
-      internalID: -3420139586244584797
+      spriteID: 6178cbc5cc0106f20800000000000000
+      internalID: 3413746987462067990
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Moldura_0: -3420139586244584797
+      jogar_como_convidado_0: 3413746987462067990
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
