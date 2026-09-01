@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3a909be7cadf99b489623a3a82e5e01e
+guid: 37c3e3ba3a84d1d48accb5bdf1eea4ad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 62163254060970261
-    second: lOGO JOGO_0
+      213: -8472214902435806553
+    second: Bara de menu_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lOGO JOGO_0
+      name: Bara de menu_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 304
-        height: 144
+        width: 2128
+        height: 496
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 511f2647629dcd000800000000000000
-      internalID: 62163254060970261
+      spriteID: 7a20b871f65ac6a80800000000000000
+      internalID: -8472214902435806553
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      lOGO JOGO_0: 62163254060970261
+      Bara de menu_0: -8472214902435806553
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

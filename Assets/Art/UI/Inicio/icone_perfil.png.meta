@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 81c1d3228e5296542986c945172e8381
+guid: 35e143356806fbd48836ac27c05df0cd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8442458687614789518
-    second: jogar com gmail_0
+      213: 8109333915289107155
+    second: icone_perfil_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jogar com gmail_0
+      name: icone_perfil_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 369
-        height: 115
+        width: 124
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2785fcdbd8c56da80800000000000000
-      internalID: -8442458687614789518
+      spriteID: 3dab5d91b342a8070800000000000000
+      internalID: 8109333915289107155
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jogar com gmail_0: -8442458687614789518
+      icone_perfil_0: 8109333915289107155
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

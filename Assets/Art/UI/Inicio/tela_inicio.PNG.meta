@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: c1d2b15e453de424ab097d19609c37b0
+guid: 216e65918e1f6ca47ba303e095813fd1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4238467778708592708
-    second: logo_jogo_0
-  - first:
-      213: 1118885617078442471
-    second: logo_jogo_1
+      213: -1289739277722579109
+    second: tela_inicio_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,35 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: logo_jogo_0
+      name: tela_inicio_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 2
-        width: 283
-        height: 131
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4485dd50dff02da30800000000000000
-      internalID: 4238467778708592708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: logo_jogo_1
-      rect:
-        serializedVersion: 2
-        x: 194
+        x: 0
         y: 0
-        width: 9
-        height: 8
+        width: 572
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e911466a84178f00800000000000000
-      internalID: 1118885617078442471
+      spriteID: b5f0a72d5fce91ee0800000000000000
+      internalID: -1289739277722579109
       vertices: []
       indices: 
       edges: []
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      logo_jogo_0: 4238467778708592708
-      logo_jogo_1: 1118885617078442471
+      tela_inicio_0: -1289739277722579109
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

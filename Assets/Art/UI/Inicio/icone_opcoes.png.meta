@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 66cad3429c311ff4398c5d6cf1330a19
+guid: 629fe8b2745b88c4cb25479c281d54a2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2384118846429654174
-    second: pLANO DE FUNDO_0
+      213: -4240635938205204962
+    second: icone_opcoes_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pLANO DE FUNDO_0
+      name: icone_opcoes_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 572
-        height: 1024
+        x: 10
+        y: 10
+        width: 160
+        height: 164
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2631f307a88e9eed0800000000000000
-      internalID: -2384118846429654174
+      spriteID: e1ef581051c3625c0800000000000000
+      internalID: -4240635938205204962
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pLANO DE FUNDO_0: -2384118846429654174
+      icone_opcoes_0: -4240635938205204962
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

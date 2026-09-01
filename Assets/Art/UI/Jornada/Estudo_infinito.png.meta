@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 67325601441081a458c446f3030659e6
+guid: 67e3ad059a9dde34f997c4c6e85e209f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4482014880133419658
-    second: PAINEL BEM VIDO AO JOGO _0
+      213: 9055256993365255756
+    second: Estudo_infinito_0
+  - first:
+      213: 116863833825236271
+    second: Estudo_infinito_1
+  - first:
+      213: -2618484779114827453
+    second: Estudo_infinito_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PAINEL BEM VIDO AO JOGO _0
+      name: Estudo_infinito_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 5
-        width: 362
-        height: 239
+        x: 110
+        y: 11
+        width: 1475
+        height: 503
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a821e5869c0533e30800000000000000
-      internalID: 4482014880133419658
+      spriteID: c466867324cbaad70800000000000000
+      internalID: 9055256993365255756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Estudo_infinito_1
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 416
+        width: 127
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f255e36a90f2f9100800000000000000
+      internalID: 116863833825236271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Estudo_infinito_2
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 111
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 341f71b77f549abd0800000000000000
+      internalID: -2618484779114827453
       vertices: []
       indices: 
       edges: []
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PAINEL BEM VIDO AO JOGO _0: 4482014880133419658
+      Estudo_infinito_0: 9055256993365255756
+      Estudo_infinito_1: 116863833825236271
+      Estudo_infinito_2: -2618484779114827453
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
